@@ -43,3 +43,27 @@ class GalleryTest(TestCase):
         self.new_image.save_img()
         fetch_specific = Category.objects.get(category_name='apples')
         self.assertTrue(fetch_specific.category_name=='food')    
+    def test_filter_by_location(self):
+        self.new_image.save_img()
+        fetch_specific = Image.filter_location('kenya')
+        self.assertEqual(fetch_specific.get(id=1),self.new_image)
+class TestLocation(TestCase):
+    def setUp(self):
+        self.location = Location(location_name='Kenya')
+        self.location.save_location()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.location, Location))
+
+    def test_save_location(self):
+        self.location.save_location()
+        locations = Location.search_location()
+        self.assertTrue(len(locations) > 0)
+
+class CategoryTestClass(TestCase):
+    def setUp(self):
+        self.category = Category(category_name='Food')
+        self.category.save_category()
+
+    def test_instance(self):
+        self.assertTrue(isinstance(self.category, Category))
