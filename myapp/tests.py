@@ -30,3 +30,16 @@ class GalleryTest(TestCase):
         Image.delete_img(filtered_object)
         all_objects = Image.objects.all()
         self.assertTrue(len(all_objects) == 0)
+    def test_update_single_object_property(self):
+        self.new_image.save_img()
+        filtered_object =Image.update_image('apples','apples')
+        fetched = Image.objects.get(img_name='apples')
+        self.assertEqual(fetched.get(id=1).img_name,'apples')
+    def test_get_image_by_id(self):
+        self.new_image.save_img()
+        fetched_image = Image.get_img_by_id(1)
+        self.assertEqual(fetched_image.id,1)
+    def test_search_by_category(self):
+        self.new_image.save_img()
+        fetch_specific = Category.objects.get(category_name='apples')
+        self.assertTrue(fetch_specific.category_name=='food')    
