@@ -14,3 +14,19 @@ A personal gallery application to display various photos by categories and locat
 + [x] Copy a link to the photo to share with my friends.
 + [x] View photos based on the location they were taken.
 
+
+### Technologies
+* BackEnd:
+      * Python
+      * Django
+* FontEnd:
+      * HTML
+      * CSS
+      * JavaScript
+      * Bootstrap
+* Database
+      * PostgreSQL
+* Deployment
+      * Heroku   
+
+
