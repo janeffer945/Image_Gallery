@@ -19,4 +19,25 @@ class Category(models.Model):
     def save_category(self):
         self.save 
     def delete_category(self):
-        self.delete     
+        self.delete    
+class Image(models.Model):
+    # id = models.AutoField(primary_key=True)
+    img_name=models.CharField(max_length=30)
+    img_decription=models.TextField()
+    img_path=models.ImageField(upload_to='pictures/')
+    img_location=models.ForeignKey(Location,on_delete=models.CASCADE)
+    img_category=models.ForeignKey(Category,on_delete=models.CASCADE)
+    time=models.DateField(auto_now_add=True)
+     def __str__(self):
+        return self.img_name
+
+    def save_img(self):
+        self.save()
+
+    def delete_img(self):
+        self.delete 
+
+    @classmethod
+    def search_category(cls,search_term) :
+         search_results = cls.objects.filter(img_category__category_name__icontains=search_term)
+         return search_results
