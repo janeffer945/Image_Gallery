@@ -66,6 +66,12 @@ To get the code..
 ### Known bugs
 No known bugs
 
+## Contact Information
+
+For any further inquiries or contributions or comments, reach me at 
+### License
+
+
 
 
 
