@@ -37,5 +37,12 @@ A personal gallery application to display various photos by categories and locat
 | Search image in a certain category| View photos matching search term|
 
 
+### Requirements
+
+* Either a computer,phone,tablet or an Ipad
+* An access to the Internet
+
+
+
 
 
