@@ -6,6 +6,9 @@ A personal gallery application to display various photos by categories and locat
 ## Author
 
 [Janeffer njeri](https://github.com/janeffer945/)
+## Dashboard
+
+![gallaryup](./static/images/image.png)
 
 ### User Stories
 + [x] View different photos that interest me.
