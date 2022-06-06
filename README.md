@@ -47,7 +47,7 @@ To get the code..
 
 1. Cloning the repository:
   ```bash
-  git clone 
+  git clone https://github.com/janeffer945/Image_Gallery.git
   ```
 2. Move to the folder and install requirements
   ```bash
