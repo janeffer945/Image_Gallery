@@ -29,4 +29,13 @@ A personal gallery application to display various photos by categories and locat
 * Deployment
       * Heroku   
 
+### BDD
+| Input              | Output                     |
+|---------------     |---------------             |
+| Click on a photo   | Display images in Fancybox with details |
+| Click copy Link button| Copy Link to Clipboard      |
+| Search image in a certain category| View photos matching search term|
+
+
+
 
