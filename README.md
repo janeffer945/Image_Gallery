@@ -62,6 +62,10 @@ To get the code..
 4. Testing the application
   ```bash
   python3.8 manage.py test
+  Open the application on your browser `127.0.0.1:8000`.
+### Known bugs
+No known bugs
+
 
 
 
