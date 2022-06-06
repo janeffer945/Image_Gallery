@@ -70,6 +70,13 @@ No known bugs
 
 For any further inquiries or contributions or comments, reach me at 
 ### License
+## Licence
+
+[MIT](license)
+
+Copyright (c) 2021
+
+
 
 
 
