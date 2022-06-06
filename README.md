@@ -42,6 +42,27 @@ A personal gallery application to display various photos by categories and locat
 * Either a computer,phone,tablet or an Ipad
 * An access to the Internet
 
+### Installation
+To get the code..
+
+1. Cloning the repository:
+  ```bash
+  git clone 
+  ```
+2. Move to the folder and install requirements
+  ```bash
+  cd my_gallery
+  pipenv install <package name>
+  ```
+3. Running the application
+
+  ```bash
+  make
+  ```
+4. Testing the application
+  ```bash
+  python3.8 manage.py test
+
 
 
 
